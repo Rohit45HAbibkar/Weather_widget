@@ -44,6 +44,7 @@ export default function SearchBox({updateinfo}) {
     let handlesubmit=async(e)=>{
        try{
         e.preventDefault();
+         seterror(false);
         console.log(city);
         setcity("");
        let info= await getWeatherInfo();
